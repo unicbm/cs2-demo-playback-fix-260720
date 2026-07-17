@@ -1,0 +1,20 @@
+[package]
+name = "cs2-demo-playback-fix"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.74"
+license = "Apache-2.0"
+description = "Narrow compatibility repair for CS2 demos rejected on legacy entity message 138"
+repository = "https://github.com/unicbm/cs2-demo-playback-fix-260720"
+readme = "README.md"
+keywords = ["cs2", "demo", "source2", "replay"]
+categories = ["command-line-utilities", "games"]
+publish = false
+
+[dependencies]
+snap = "1.1.2"
+
+[profile.release]
+codegen-units = 1
+lto = "thin"
+strip = "symbols"
