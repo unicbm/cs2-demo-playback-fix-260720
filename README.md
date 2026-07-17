@@ -4,8 +4,7 @@ A small command-line tool that repairs one confirmed CS2 demo playback
 compatibility failure: current clients rejecting legacy, correctly framed
 entity message type `138` (`CEntityMessageRemoveAllDecals`).
 
-[简体中文说明](README.zh-Hans.md) ·
-[Technical investigation and rewrite contract (Chinese)](docs/TYPE138_COMPATIBILITY.zh-Hans.md)
+[Technical investigation and rewrite contract](docs/TYPE138_COMPATIBILITY.md)
 
 ## Download and use on Windows
 
