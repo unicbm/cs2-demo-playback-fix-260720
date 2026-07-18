@@ -29,8 +29,6 @@ try {
     Copy-Item -LiteralPath (Join-Path $repoRoot 'THIRD_PARTY_NOTICES.md') -Destination $packageRoot
 
     Compress-Archive -LiteralPath $packageRoot -DestinationPath $zipPath -CompressionLevel Optimal
-    $exeSize = (Get-Item -LiteralPath (Join-Path $packageRoot 'cs2-demo-playback-fix.exe')).Length
-    Write-Host "Executable size: $exeSize bytes"
     Write-Host "Created $zipPath"
 }
 finally {

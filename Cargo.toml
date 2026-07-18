@@ -1,6 +1,6 @@
 [package]
 name = "cs2-demo-playback-fix"
-version = "0.1.2"
+version = "0.1.1"
 edition = "2021"
 rust-version = "1.74"
 license = "Apache-2.0"
@@ -15,8 +15,6 @@ publish = false
 snap = "1.1.2"
 
 [profile.release]
-opt-level = "z"
 codegen-units = 1
-lto = "fat"
-panic = "abort"
+lto = "thin"
 strip = "symbols"
